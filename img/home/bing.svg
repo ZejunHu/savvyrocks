@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>dribbble_L</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="HOME" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-158.000000, -4734.000000)">
+        <g id="FOOTER" transform="translate(-2.000000, 4552.000000)" fill="#FFFFFF">
+            <g id="social-media" transform="translate(115.000000, 136.000000)">
+                <path d="M60,76 C51.7157283,76 45,69.2842717 45,61 C45,52.7157283 51.7157283,46 60,46 C68.2842717,46 75,52.7157283 75,61 C75,69.2842717 68.2842717,76 60,76 Z M60,74.8 C67.6215299,74.8 73.8,68.6215299 73.8,61 C73.8,53.3784701 67.6215299,47.2 60,47.2 C52.3784701,47.2 46.2,53.3784701 46.2,61 C46.2,68.6215299 52.3784701,74.8 60,74.8 Z M59,57.0625 L67,59.6015625 L67,63.6640625 L58,69.25 L54,66.7109375 L54,53 L58,54.5234375 L58,64.171875 L62.969,61.6642969 L60.5,60.6171875 L59,57.0625 Z" id="dribbble_L"></path>
+            </g>
+        </g>
+    </g>
+</svg>

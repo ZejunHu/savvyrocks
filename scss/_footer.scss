@@ -1,0 +1,101 @@
+.footer {
+  .copyright {
+    background-color: #222222;
+    color: #9b9b9b;
+    font-size: 0.75rem;
+  }
+
+  .contact {
+    align-items: flex-end;
+    min-height: 250px;
+    background-color: #4b4a4a;
+
+    .col-xs-4 {
+      padding-top: 5rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  .bring-icon {
+    width: 62px;
+  }
+
+  .social-box {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  .social-box:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+    /* Adjusts for spacing */
+  }
+
+  .social-box i {
+    color: white;
+    font-size: 1em;
+    margin: auto;
+    padding-left: 4px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .social-box:hover i {
+    color: $theme-yellow;
+  }
+
+  .social-box:hover {
+    border: 1px solid $theme-yellow !important;
+  }
+
+  .social-box {
+    border: 1px solid $white;
+    border-radius: 50%;
+
+    .fab {
+      color: $white;
+    }
+  }
+
+  .logo {
+    height: 100px;
+    width: auto;
+    @media(max-width: 576px) {
+      height: 60px;
+    }
+  }
+
+  .contact-info {
+    color: $white;
+    font-size: small;
+
+    strong {
+      visibility: hidden;
+    }
+  }
+
+  .qrcode:hover:after {
+    // content: url("../img/home/qr-code.jpg");
+    // background-size: 10px auto;
+    // width: 10px;
+    // height: auto;
+    // /* no need for qoutes */
+    // display: block;
+    background-image: url("../img/home/qr-code.jpg");
+    background-size: 100px 100px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    content: "";
+    bottom: 30px;
+    left: 40px;
+  }
+}

@@ -1,0 +1,42 @@
+[debug] [2018-03-09T22:57:36.134Z] ----------------------------------------------------------------------
+[debug] [2018-03-09T22:57:36.137Z] Command:       /usr/local/Cellar/node/7.10.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-03-09T22:57:36.137Z] CLI Version:   3.17.6
+[debug] [2018-03-09T22:57:36.138Z] Platform:      darwin
+[debug] [2018-03-09T22:57:36.138Z] Node Version:  v7.10.0
+[debug] [2018-03-09T22:57:36.139Z] Time:          Fri Mar 09 2018 17:57:36 GMT-0500 (EST)
+[debug] [2018-03-09T22:57:36.139Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-09T22:57:36.154Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-09T22:57:36.154Z] > authorizing via signed-in user
+[debug] [2018-03-09T22:57:36.157Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/savvy-home-b0e0e  
+  
+ Fri Mar 09 2018 17:57:36 GMT-0500 (EST)
+[debug] [2018-03-09T22:57:36.481Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-09T22:57:36.482Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/savvy-home-b0e0e/tokens  
+  
+ Fri Mar 09 2018 17:57:36 GMT-0500 (EST)
+[debug] [2018-03-09T22:57:36.907Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'savvy-home-b0e0e'...
+[info] 
+[info] i  deploying firestore, hosting
+[info] i  firestore: checking firestore.rules for compilation errors...
+[debug] [2018-03-09T22:57:37.167Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/savvy-home-b0e0e:test  
+ { source: { files: [ [Object] ] } } 
+ Fri Mar 09 2018 17:57:37 GMT-0500 (EST)
+[debug] [2018-03-09T22:57:37.299Z] <<< HTTP RESPONSE 200
+[info] ✔  firestore: rules file firestore.rules compiled successfully
+[info] i  firestore: uploading rules firestore.rules...
+[debug] [2018-03-09T22:57:37.303Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/savvy-home-b0e0e/rulesets  
+ { source: { files: [ [Object] ] } } 
+ Fri Mar 09 2018 17:57:37 GMT-0500 (EST)
+[debug] [2018-03-09T22:57:37.305Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1beta1/projects/savvy-home-b0e0e/databases/(default)/indexes  
+  
+ Fri Mar 09 2018 17:57:37 GMT-0500 (EST)
+[debug] [2018-03-09T22:57:37.415Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-09T22:57:37.415Z] [rules] created ruleset projects/savvy-home-b0e0e/rulesets/e0388fa0-70e4-4e86-bc95-015dad2a2e7a
+[debug] [2018-03-09T22:57:37.724Z] <<< HTTP RESPONSE 200
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-03-09T22:57:43.381Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/savvy-home-b0e0e/uploads/-L7ByyEr3uDZNn0p5VKo?fileCount=333&message=  
+  
+ Fri Mar 09 2018 17:57:43 GMT-0500 (EST)

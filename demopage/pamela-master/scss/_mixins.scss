@@ -1,0 +1,24 @@
+// Mixins
+@mixin transition-all() {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+@mixin background-cover() {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@mixin assistant() {
+  font-family: 'Assistant', serif;
+}
+@mixin berkshire-swash() {
+  font-family: 'Berkshire Swash', serif;
+}
+@mixin times-new-roman() {
+  font-family: "Times New Roman", Times, serif;
+}
+@mixin satisfy() {
+  font-family: 'Satisfy', serif;
+}

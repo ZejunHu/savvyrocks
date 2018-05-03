@@ -1,0 +1,139 @@
+// Styling for the navbar
+#mainNav {
+  border-bottom: 1px solid fade-out($gray-900, .9);
+  background-color: $white;
+  @include assistant;
+  @include transition-all;
+  .navbar-brand {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $main-content;
+    @include assistant;
+    &:focus,
+    &:hover {
+      color: darken($main-content, .1);
+    }
+  }
+  .navbar-nav {
+    > li.nav-item {
+       > a.nav-link,
+      > a.nav-link:focus {
+        font-size: .9rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $gray-900;
+        &:hover {
+          color: $button;
+        }
+        &.active {
+          color: $subtitle !important;
+          background-color: transparent;
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+  .nav-logo, .nav-img-left, .nav-img-right {
+    display: none;
+  }
+  @media (min-width: 992px) {
+    border-color: transparent;
+    background-color: transparent;
+    .navbar-brand {
+      display: none;
+      color: fade-out($white, .3);
+      &:focus,
+      &:hover {
+        color: $button;
+      }
+    }
+    .nav-logo-top {
+      display: inline-block;
+      position: absolute;
+      height: 90px;
+      width: 150px;
+      top: 23%;
+      left: 45.5%;
+    }
+    .navbar-nav > li.nav-item > a.nav-link {
+      padding: 4.5rem 4.5rem;
+    }
+    .navbar-nav > li.nav-item > a.nav-link,
+    .navbar-nav > li.nav-item > a.nav-link:focus {
+      color: fade-out($white, .3);
+      &:hover {
+        color: $button;
+      }
+    }
+    &.navbar-shrink {
+      border-bottom: 1px solid fade-out($subtitle, .9);
+      background-color: $white;
+      box-shadow: 0px 2px 4px 0px #828282;
+      .navbar-brand {
+        color: $subtitle;
+        &:focus,
+        &:hover {
+          color: darken($primary, .1);
+        }
+      }
+      .nav-logo-top {
+        display: none;
+      }
+      .nav-logo-shrink {
+        display: inline-block;
+        position: absolute;
+        height: 54px;
+        width: 90px;
+        top: 10%;
+        left: 46.9%;
+      }
+      .nav-img-left {
+        position: absolute;
+        display: inline-block;
+        height: 2rem;
+        width: 5rem;
+        top: 0;
+        left: 0;
+      }
+      .nav-img-right {
+        position: absolute;
+        display: inline-block;
+        height: 2rem;
+        width: 5rem;
+        bottom: -0.05rem;
+        right: 0;
+      }
+      .navbar-nav > li.nav-item > a.nav-link {
+        color: $main-content;
+        padding: 1rem 4.5rem;
+        &:hover {
+          color: $button;
+        }
+      },
+      .navbar-nav > li.nav-item > a.nav-link:focus {
+        color: $main-content;
+        &:hover {
+          color: $button;
+        }
+      }
+    }
+  }
+}
+
+.nav-item-left {
+  @media (min-width: 992px) {
+    margin-right: 120px;
+  }
+}
+
+.nav-item-right {
+  @media (min-width: 992px) {
+    margin-left: 120px;
+  }
+}
+
+.logo-container {
+  position: relative;
+}

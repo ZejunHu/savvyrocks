@@ -1,0 +1,393 @@
+#home {
+  .header-banner {
+    width: 80%;
+    height: auto;
+  }
+
+  .home-banner-sec {
+    @media(min-width: 576px) {
+      height: 400px;
+    }
+
+    img {
+      width: 100%;
+      height: 200px;
+    }
+  }
+
+  #myVideo {
+    @media(max-width: 576px) {
+      display: none;
+    }
+  }
+
+  .parallax-toronto {
+    height: 400px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .parallax-2 {
+      /* The image used */
+      background-image: url("../img/home/toronto@4x.png");
+      /* Full height */
+      height: 100%;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .section-heading {
+    letter-spacing: 6px;
+  }
+
+  .btn-yellow {
+    border: 1px #383736 solid;
+    border-radius: 4px;
+    position: relative; //display:block;
+    height: 45px;
+    margin: 10px 7px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #383736;
+    text-transform: uppercase;
+    outline: 0;
+    overflow: hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.08s ease-in;
+    -o-transition: 0.08s ease-in;
+    -ms-transition: 0.08s ease-in;
+    -moz-transition: 0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+    display: flex;
+  }
+
+  .projects {
+    .show-more {
+      cursor: pointer;
+      padding-left: 3rem !important;
+      position: absolute;
+      bottom: 1rem;
+      color: $white;
+      font-weight: 500;
+      font-size: small;
+    }
+
+    .show-more-effect-home:hover {
+      color: $gray-900 !important;
+
+      .pr-1 {
+        color: $gray-900 !important;
+        text-decoration: none;
+      }
+
+      .show-more-arrow-effect {
+        animation: nudge 2s forwards;
+      }
+    }
+    @keyframes nudge {
+      50% {
+        transform: translate(25px, 0);
+      }
+
+      ,
+      100% {
+        transform: translate(25px, 0);
+      }
+    }
+    // overlay card
+    .overlay-cards {
+      .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: 0.5s ease;
+        backface-visibility: hidden;
+      }
+
+      .middle {
+        transition: 0.5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: $theme-yellow;
+        width: 100%;
+        height: 100%;
+      }
+
+      .container:hover .image {
+        opacity: 0.3;
+      }
+
+      .container:hover .middle {
+        opacity: 0.8;
+      }
+
+      .container:hover .sub-title-hide {
+        visibility: hidden;
+      }
+    }
+  }
+
+  .intro-sec {
+    .toronto-banner {
+      width: 100%;
+    }
+
+    .quote {
+      font-size: 7em;
+      line-height: 50px;
+      color: #4d3c35;
+      font-family: 'Coda Caption', sans-serif !important;
+      position: relative;
+    }
+
+    .video {
+      .brand-icon {
+        width: 20%;
+        height: auto;
+        transition: 0.5s ease;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+    }
+
+    .service-icons {
+      .box {
+        height: 70px;
+
+        img {
+          width: 60px;
+          height: auto;
+        }
+
+        .img-home {
+          width: 80px;
+          height: auto;
+        }
+      }
+
+      .text {
+        color: $theme-yellow;
+        font-size: small;
+      }
+    }
+  }
+
+  .real-estate {
+    .real-estate-intro {
+      @media (min-width: 576px) {
+        padding-left: 8em;
+        padding-right: 8em;
+      }
+
+      div[class*="col-"] {
+        padding-bottom: 3rem;
+      }
+    }
+
+    .real-estate-img {
+      width: 100%;
+    }
+
+    .img-centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .text {
+      font-size: 30px;
+      color: white;
+      @media (max-width: 1500px) {
+        line-height: 1;
+      }
+    }
+  }
+
+  .parallax {
+    /* The image used */
+    background-image: url("../img/home/home-bg1.png");
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  hr {
+    max-width: 30px;
+    border-width: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .nanum {
+    font-family: 'Sofia', cursive !important;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  //flip anamation
+  .flip-container.hover .flipper,
+  .flip-container:hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+
+  .flip-container:hover .front {
+    z-index: 1;
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+
+  .flip-container:hover .back {
+    z-index: 2;
+    // -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    // transform: rotateY(0deg);
+    background-color: $theme-yellow;
+
+    .text {
+      -ms-transform: translate(-50%, -50%) rotateY(180deg);
+    }
+
+    .show-more-effect {
+      -ms-transform: rotateY(180deg);
+      padding-left: 3rem;
+    }
+  }
+
+  .back,
+  .flip-container,
+  .front {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    // height: -moz-available;
+    // /* WebKit-based browsers will ignore this. */
+    // height: -webkit-fill-available;
+    // /* Mozilla-based browsers will ignore this. */
+    // height: fill-available;
+  }
+
+  .back,
+  .front {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .front {
+    //background: url("http://davidwalsh.name/demo/dwflip.jpg") 0 0 no-repeat;
+    z-index: 2;
+
+    .sub-title-hide {
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+  }
+
+  .back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    background: $theme-yellow;
+    height: 100%;
+    position: absolute;
+
+    .text {
+      color: white;
+      font-size: 16px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: rotateY(180deg);
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  }
+
+  .front .name {
+    font-size: 2em;
+    display: inline-block;
+    background: rgba(33, 33, 33, 0.9);
+    color: #f8f8f8;
+    font-family: Courier;
+    padding: 5px 10px;
+    border-radius: 5px;
+    bottom: 60px;
+    left: 25%;
+    position: absolute;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+
+  .show-a {
+    text-decoration: none !important;
+  }
+
+  .show-more-effect-head:hover {
+    color: $white !important;
+
+    .show-more-arrow-effect-head {
+      animation: ndge 2s forwards;
+    }
+  }
+  @keyframes ndge {
+    50% {
+      transform: translate(15px, 0);
+    }
+
+    ,
+    100% {
+      transform: translate(15px, 0);
+    }
+  }
+}

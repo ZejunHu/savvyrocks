@@ -1,0 +1,171 @@
+#pro {
+  .show-more {}
+
+  .intro {
+    @media (max-width: 576px) {
+      padding-top: 3rem !important;
+    }
+  }
+
+  .banner {
+    overflow-y: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+      @media (max-width: 576px) {
+        margin-top: 110px;
+        transform: scale(2,2);
+      }
+    }
+  }
+
+  .header-banner {
+    width: 80%;
+    height: auto;
+  }
+
+  .home-banner-sec {
+    height: 400px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .section-heading {
+    letter-spacing: 6px;
+  }
+
+  .section-padding {
+    padding: 8rem 0 5rem;
+  }
+
+  .padding-top-4 {
+    padding: 4rem 0 0;
+  }
+
+  .projects {
+    // overlay card
+    .overlay-cards {
+      .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: 0.5s ease;
+        backface-visibility: hidden;
+      }
+
+      .middle {
+        transition: 0.5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: $theme-yellow;
+        width: 100%;
+        height: 100%;
+      }
+
+      .container:hover .image {
+        opacity: 0.3;
+      }
+
+      .container:hover .middle {
+        opacity: 0.8;
+      }
+
+      .text {
+        color: white;
+        font-size: 16px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .sub-title-hide {}
+
+      .container:hover .sub-title-hide {
+        visibility: hidden;
+      }
+    }
+  }
+
+  .intro-sec {
+    .toronto-banner {
+      width: 100%;
+    }
+
+    .service-icons {
+      img {
+        width: 80px;
+        height: 80px;
+      }
+
+      .text {
+        color: $theme-yellow;
+        font-size: small;
+      }
+    }
+  }
+
+  .real-estate {
+    .real-estate-intro {
+      padding-left: 8em;
+      padding-right: 8em;
+    }
+
+    .real-estate-img {
+      width: 100%;
+    }
+
+    .img-centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .text {
+      font-size: 22px;
+      color: white;
+    }
+  }
+
+  .parallax {
+    /* The image used */
+    background-image: url("../img/home/home-bg1.png");
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  hr {
+    max-width: 50px;
+    border-width: 0;
+  }
+
+  .override-mwidth {
+    max-width: 827px !important;
+  }
+
+  .text-auto {
+    text-align: -webkit-auto;
+  }
+
+  .p-lineheight {
+    line-height: 30px;
+  }
+}

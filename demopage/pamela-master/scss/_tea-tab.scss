@@ -1,0 +1,61 @@
+.tea-tab {
+  margin: 1rem 0.1rem;
+  padding: 0;
+  height: 4rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  @include background-cover;
+}
+
+.tea-tab1 {
+  background-image: url('../img/our-tea/tea-tab1.png');
+}
+
+.tea-tab2 {
+  background-image: url('../img/our-tea/tea-tab2.png');
+}
+
+.tea-tab3 {
+  background-image: url('../img/our-tea/tea-tab3.png');
+}
+
+.tea-tab4 {
+  background-image: url('../img/our-tea/tea-tab4.png');
+}
+
+.tea-tab5 {
+  background-image: url('../img/our-tea/tea-tab5.png');
+}
+
+.tea-tab-img {
+  width: 100%;
+}
+
+a.tea-tab {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  > p {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  &:hover {
+    background-color: $primary;
+    background-image: url('../img/button-leaf.png');
+    background-size: 5rem 3.2rem;
+    border-top: 0.3rem solid $button-hover;
+    box-shadow: 0px 0px 2px #888;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+
+div.tea-tab {
+  display: none;
+  @media (min-width: 576px) {
+    display: inline-block;
+  }
+}

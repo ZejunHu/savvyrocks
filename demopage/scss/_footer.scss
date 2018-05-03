@@ -1,0 +1,75 @@
+.footer {
+  .copyright {
+    background-color: $gray-900;
+    color: $gray-600;
+    font-size: 0.75rem;
+  }
+
+  .contact {
+    min-height: 300px;
+    background-color: #4b4a4a;
+    align-items: flex-end;
+  }
+
+  .social-box {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  .social-box:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+    /* Adjusts for spacing */
+  }
+
+  .social-box i {
+    color: white;
+    font-size: 1em;
+    margin: auto;
+    padding-left: 4px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .social-box:hover i {
+    color: $theme-yellow;
+  }
+
+  .social-box:hover {
+    border: 1px solid $theme-yellow !important;
+  }
+
+  .social-box {
+    border: 1px solid $white;
+    border-radius: 50%;
+
+    .fab {
+      color: $white;
+    }
+  }
+
+  .logo {
+    height: 100px;
+    width: auto;
+  }
+
+  .contact-info {
+    color: $white;
+    font-size: small;
+
+    strong {
+      visibility: hidden;
+    }
+  }
+
+  hr {
+    margin: 1rem 0;
+  }
+}

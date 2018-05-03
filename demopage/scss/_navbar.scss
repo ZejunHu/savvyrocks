@@ -1,0 +1,339 @@
+// Styling for the navbar
+
+#mainNav {
+  border-bottom: 1px solid fade-out($gray-900, .9);
+  background-color: transparent;
+  @include sans-serif-font;
+  @include transition-all;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+
+  .navbar-toggler {
+    border-color: $white;
+    border: 0;
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+    .button:focus {
+      outline: 0 auto -webkit-focus-ring-color !important;
+    }
+  }
+
+  .dropdown .dropdown-menu {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    max-height: 200px;
+    opacity: 1;
+  }
+
+  .dropdown-menu {
+    background-color: fade-out($gray-900, .5);
+    border-radius: 0;
+
+    .dropdown-item {
+      color: fade-out($white, .3);
+      @include sans-serif-font;
+      font-size: 0.9rem;
+      font-weight: 300;
+
+      strong {
+        color: $theme-yellow;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+
+      &:focus,
+      &:hover {
+        background-color: transparent !important;
+        color: $theme-yellow;
+      }
+    }
+  }
+
+  .navbar-brand {
+    img {
+      width: 35px;
+      height: auto;
+      margin-right: 50px;
+      margin-left: 50px;
+    }
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    color: $primary;
+    @include sans-serif-font;
+
+    &:focus,
+    &:hover {
+      color: darken($primary, .1);
+    }
+  }
+
+  .navbar-nav {
+    @media (max-width: 576px) {
+      background-color: fade-out($gray-900, .2);
+    }
+    cursor: pointer;
+
+    > li.nav-item {
+      > a.nav-link,
+      > a.nav-link:focus {
+        cursor: pointer;
+        line-height: 60px;
+        font-size: 0.9rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $white;
+        @media (max-width: 576px) {
+          padding-left: 2rem !important;
+        }
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+
+        &:hover {
+          color: $primary;
+        }
+
+        &.active {
+          color: $theme-yellow !important;
+          background-color: transparent;
+
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    border-color: transparent;
+    background-color: transparent;
+
+    .navbar-brand {
+      color: fade-out($white, .3);
+
+      &:focus,
+      &:hover {
+        color: $white;
+      }
+    }
+
+    .navbar-nav > li.nav-item > a.nav-link {
+      padding: 0.5rem 1rem;
+    }
+
+    .navbar-nav > li.nav-item > a.nav-link,
+    .navbar-nav > li.nav-item > a.nav-link:focus {
+      color: fade-out($white, .3);
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+    &.navbar-shrink {
+      display: none;
+      border-bottom: 1px solid fade-out($gray-900, .9);
+      background-color: fade-out($gray-900, .1);
+
+      .navbar-brand {
+        color: $primary;
+
+        &:focus,
+        &:hover {
+          color: darken($primary, .9);
+        }
+      }
+
+      .navbar-nav > li.nav-item > a.nav-link,
+      .navbar-nav > li.nav-item > a.nav-link:focus {
+        color: $gray-500;
+        font-weight: 100 !important;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+//nav-sec, hidden nav when start
+
+.nav-scrolled {
+  background-color: fade-out($gray-900, .1);
+  font-size: 0.9rem;
+  font-weight: 300;
+  right: auto !important;
+  width: 100%;
+  @include sans-serif-font;
+  @include transition-all;
+
+  .navbar-toggler {
+    border-color: $white;
+    border: 0;
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+    .button:focus {
+      outline: 0 auto -webkit-focus-ring-color !important;
+    }
+  }
+
+  .dropdown .dropdown-menu {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    max-height: 200px;
+    opacity: 1;
+  }
+
+  .dropdown-menu {
+    background-color: fade-out($gray-900, .1);
+    border-radius: 0;
+
+    .active {
+      color: $theme-yellow !important;
+      background-color: transparent !important;
+    }
+
+    .dropdown-item {
+      color: fade-out($white, .3);
+      @include sans-serif-font;
+      font-size: 0.9rem;
+      font-weight: 300;
+
+      strong {
+        color: $theme-yellow;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+
+      &:focus,
+      &:hover {
+        background-color: transparent !important;
+        color: $theme-yellow;
+      }
+    }
+  }
+
+  .brand-icon {
+    height: auto;
+    width: 80px;
+    @media (min-width: 576px) {
+      margin-left: 5rem;
+    }
+  }
+
+  .navbar-nav {
+    > li.nav-item {
+      @media (min-width: 576px) {
+        margin-right: 4rem !important;
+      }
+      cursor: pointer;
+
+      > a.nav-link,
+      > a.nav-link:focus {
+        line-height: 30px;
+        font-size: 0.9rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $white;
+        @media (max-width: 576px) {
+          padding-left: 2rem !important;
+        }
+        padding-left: 0 !important;
+        padding-right: 2rem !important;
+
+        &:hover {
+          color: $primary;
+        }
+
+        &.active {
+          color: $theme-yellow !important;
+          background-color: transparent;
+
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    background-color: fade-out($gray-900, .1);
+    font-size: 0.9rem;
+    font-weight: 300;
+
+    .navbar-brand {
+      color: fade-out($white, .3);
+
+      &:focus,
+      &:hover {
+        color: $white;
+      }
+    }
+
+    .navbar-nav > li.nav-item > a.nav-link {
+      padding: 0.5rem 1rem;
+    }
+
+    .navbar-nav > li.nav-item > a.nav-link,
+    .navbar-nav > li.nav-item > a.nav-link:focus {
+      color: fade-out($white, .3);
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+    &.navbar-shrink {
+      display: none;
+      border-bottom: 1px solid fade-out($gray-900, .9);
+      background-color: fade-out($gray-900, .1);
+
+      .navbar-brand {
+        color: $primary;
+
+        &:focus,
+        &:hover {
+          color: darken($primary, .9);
+        }
+      }
+
+      .navbar-nav > li.nav-item > a.nav-link,
+      .navbar-nav > li.nav-item > a.nav-link:focus {
+        color: $gray-500;
+        font-weight: 100 !important;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

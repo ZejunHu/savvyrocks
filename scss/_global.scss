@@ -1,0 +1,241 @@
+// Global styling for this template
+
+* {
+  font-family: "Avenir Next"!important;
+}
+
+.fab {
+  font-family: Font Awesome\ 5 Brands !important;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Avenir Next" !important;
+}
+
+body {
+  @include serif-font;
+}
+
+hr {
+  max-width: 50px;
+  border-width: 0;
+}
+
+a {
+  color: $primary;
+  @include transition-all;
+
+  &:hover {
+    color: darken($primary, .1);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Avenir Next" !important;
+  letter-spacing: 3px;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.bg-dark {
+  background-color: $gray-900 !important;
+}
+
+.text-faded {
+  color: fade-out($white, .3);
+}
+
+section {
+  padding: 8rem 0;
+}
+
+.section-heading {
+  margin-top: 0;
+}
+
+::-moz-selection {
+  color: $white;
+  background: $gray-900;
+  text-shadow: none;
+}
+
+::selection {
+  color: $white;
+  background: $gray-900;
+  text-shadow: none;
+}
+
+img::selection {
+  color: $white;
+  background: transparent;
+}
+
+img::-moz-selection {
+  color: $white;
+  background: transparent;
+}
+// css buffering animation
+
+.spinner {
+  margin: 70px auto 0;
+  width: 70px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #c19743;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+@-webkit-keyframes sk-bouncedelay {
+  0%,
+  100%,
+  80% {
+    -webkit-transform: scale(0);
+  }
+
+  40% {
+    -webkit-transform: scale(1.0);
+  }
+}
+@keyframes sk-bouncedelay {
+  0%,
+  100%,
+  80% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  40% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+.buffering-animation {
+  padding: 0 0 4rem !important;
+}
+
+.show-more {
+  cursor: pointer;
+  //padding-left: 14.5% !important;
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  a {
+    padding-right: 0.5rem;
+  }
+}
+
+.show-more-effect:hover {
+  color: #c19743 !important;
+
+  .show-more-arrow-effect {
+    animation: nudge 2s forwards;
+  }
+}
+@keyframes nudge {
+  50% {
+    transform: translate(25px, 0);
+  }
+
+  ,
+  100% {
+    transform: translate(25px, 0);
+  }
+}
+
+.fill:hover {
+  color: $white !important;
+  border-color: $theme-yellow !important;
+}
+
+.fill:before {
+  content: "";
+  position: absolute;
+  background: saturate($theme-yellow, 5%);
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  top: 0;
+  z-index: -1;
+  -webkit-transition: right 0.3s ease-in;
+}
+
+.fill:hover:before {
+  right: 0;
+}
+
+.contact-btn {
+  .show-a {
+    text-decoration: none !important;
+  }
+
+  .show-more-effect-head:hover {
+    color: $white !important;
+
+    .show-more-arrow-effect-head {
+      animation: ndge 2s forwards;
+    }
+  }
+  @keyframes ndge {
+    50% {
+      transform: translate(15px, 0);
+    }
+
+    ,
+    100% {
+      transform: translate(15px, 0);
+    }
+  }
+
+  .btn-yellow {
+    border: 1px #383736 solid;
+    border-radius: 4px;
+    position: relative; //display:block;
+    height: 45px;
+    margin: 10px 7px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #383736;
+    text-transform: uppercase;
+    outline: 0;
+    overflow: hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.08s ease-in;
+    -o-transition: 0.08s ease-in;
+    -ms-transition: 0.08s ease-in;
+    -moz-transition: 0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+    display: flex;
+  }
+}

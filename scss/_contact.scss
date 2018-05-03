@@ -1,0 +1,136 @@
+#contact {
+  .content {
+    @media (max-width: 576px) {
+      padding-top: 3rem;
+    }
+
+    .text {
+      position: relative;
+      text-align: center;
+
+      .centered {
+        @media (min-width: 576px) {
+          position: absolute;
+          top: 45%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .image {
+        width: 100%;
+        height: auto;
+        @media (max-width: 576px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .banner {
+    overflow-y: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+      @media (max-width: 576px) {
+        margin-top: 110px;
+        transform: scale(2,2);
+      }
+    }
+  }
+
+  .message-box {
+    height: 180px;
+  }
+
+  .btn-yellow {
+    border: 1px solid $theme-yellow;
+    background-color: $theme-yellow;
+    border-radius: 3px;
+    color: $white;
+    font-weight: 100;
+    line-height: 17px;
+    font-size: 12px;
+    min-width: 40px;
+  }
+
+  .contact-form {
+    color: $theme-yellow;
+
+    label {
+      @media (min-width: 576px) {
+        text-align: right;
+      }
+    }
+
+    input {
+      border: 1px solid $theme-yellow;
+    }
+
+    textarea {
+      border: 1px solid $theme-yellow;
+    }
+  }
+
+  .btn-send {
+    @media(min-width: 576px) {
+      float: right;
+    }
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .info {
+    .text {
+      display: inline-flex;
+      vertical-align: middle;
+      color: $theme-yellow;
+      @media (max-width: 576px) {
+        //width: 70%;
+      }
+    }
+
+    .content {
+      @media (min-width: 576px) {
+        text-align: center;
+      }
+    }
+
+    .icon {
+      width: 50px;
+      height: auto;
+      @media (max-width: 576px) {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+
+  .box-image {
+    width: 100%;
+    filter: brightness(50%);
+
+    &:hover {
+      filter: brightness(100%);
+    }
+  }
+
+  .btn-follow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    @media(min-width: 576px) {
+      padding-right:: 50px;
+      padding-left: 50px;
+    }
+    letter-spacing: 3px;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .folllow {
+    background-color: #4b4a4a;
+  }
+}

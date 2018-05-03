@@ -1,0 +1,47 @@
+.img-side {
+  height: 12rem;
+  width: 8rem;
+}
+
+.img-left-top {
+  position: absolute;
+  left: 0;
+  top: 12%;
+}
+
+.img-side-spoon {
+  height: 10rem;
+  width: 12rem;
+}
+
+.img-left-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 12%;
+}
+
+.img-right-top {
+  position: absolute;
+  right: 0;
+  top: 12%
+}
+
+.img-right-bottom {
+  position: absolute;
+  right: 0;
+  bottom: 12%
+}
+
+.img-quote-left {
+  position: relative;
+  height: 60px;
+  width: 120px;
+  left: -10%;
+}
+
+.img-quote-right {
+  position: relative;
+  height: 60px;
+  width: 120px;
+  left: 90%;
+}

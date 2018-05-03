@@ -1,0 +1,32 @@
+#design {
+  .content {
+    @media (max-width: 576px) {
+      padding-top: 3rem;
+    }
+
+    .text {
+      @media only screen and (min-width: 480px) {
+        width: 60%;
+      }
+    }
+
+    .gallery {
+      .project-img {
+        width: 100%;
+      }
+    }
+  }
+
+  .banner {
+    overflow-y: hidden;
+
+    img {
+      height: auto;
+      width: 100%;
+      @media (max-width: 576px) {
+        margin-top: 110px;
+        transform: scale(2,2);
+      }
+    }
+  }
+}
