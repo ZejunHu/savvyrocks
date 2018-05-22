@@ -29,3 +29,8 @@
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64,.5) !important;
   }
 }
+
+.collapsing {
+    -webkit-transition: all 2s;
+    transition: all 2s;
+}

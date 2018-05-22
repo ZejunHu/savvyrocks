@@ -292,13 +292,13 @@
   }
 
   .flipper {
-    -webkit-transition: 0.6s;
+    -webkit-transition: 1.2s;
     -webkit-transform-style: preserve-3d;
-    -moz-transition: 0.6s;
+    -moz-transition: 1.2s;
     -moz-transform-style: preserve-3d;
-    -o-transition: 0.6s;
+    -o-transition: 1.2s;
     -o-transform-style: preserve-3d;
-    transition: 0.6s;
+    transition: 1.2s;
     transform-style: preserve-3d;
     position: relative;
     // height: -moz-available;
