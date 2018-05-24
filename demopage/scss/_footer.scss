@@ -1,14 +1,23 @@
 .footer {
   .copyright {
-    background-color: $gray-900;
-    color: $gray-600;
+    background-color: #222222;
+    color: #9b9b9b;
     font-size: 0.75rem;
   }
 
   .contact {
-    min-height: 300px;
-    background-color: #4b4a4a;
     align-items: flex-end;
+    min-height: 250px;
+    background-color: #4b4a4a;
+
+    .col-xs-4 {
+      padding-top: 5rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  .bring-icon {
+    width: 62px;
   }
 
   .social-box {
@@ -58,6 +67,9 @@
   .logo {
     height: 100px;
     width: auto;
+    @media(max-width: 576px) {
+      height: 60px;
+    }
   }
 
   .contact-info {
@@ -69,7 +81,21 @@
     }
   }
 
-  hr {
-    margin: 1rem 0;
+  .qrcode:hover:after {
+    // content: url("../img/home/qr-code.jpg");
+    // background-size: 10px auto;
+    // width: 10px;
+    // height: auto;
+    // /* no need for qoutes */
+    // display: block;
+    background-image: url("../img/home/qr-code.jpg");
+    background-size: 100px 100px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    content: "";
+    bottom: 30px;
+    left: 40px;
   }
 }
