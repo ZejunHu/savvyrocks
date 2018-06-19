@@ -841,7 +841,7 @@ header.masthead #myVideo {
 }
 
 .carousel .carousel-indicators {
-  bottom: -30px;
+  bottom: -3.6rem;
 }
 
 .carousel .carousel-indicators li {
@@ -2313,17 +2313,9 @@ header.masthead #myVideo {
   height: auto;
 }
 
-#wdm .home-banner-sec {
-  height: 400px;
-}
-
-#wdm .home-banner-sec img {
-  width: 100%;
-  height: 100%;
-}
-
 #wdm .section-heading {
-  letter-spacing: 6px;
+  font-size: 20px;
+  letter-spacing: 3px;
 }
 
 #wdm .section-padding {
@@ -2332,6 +2324,50 @@ header.masthead #myVideo {
 
 #wdm .padding-top-4 {
   padding: 4rem 0 0;
+}
+
+#wdm .padding-bottom-8 {
+  padding: 0 0 8rem 0;
+}
+
+@media (min-width: 992px) {
+  #wdm .container-fluid-padding {
+    padding: 0 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #wdm .container-fluid-padding {
+    padding: 0 6rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  #wdm .container-fluid-padding {
+    padding: 0 8rem;
+  }
+}
+
+#wdm .wdm-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#wdm .wdm-content-vertical-padding {
+  padding: 3rem;
+}
+
+@media (min-width: 1500px) {
+  #wdm .wdm-content-vertical-padding {
+    padding: 10rem 3rem;
+  }
+}
+
+@media (min-width: 1680px) {
+  #wdm .wdm-content-vertical-padding {
+    padding: 15rem 3rem;
+  }
 }
 
 #wdm .projects .overlay-cards .image {
@@ -2380,53 +2416,6 @@ header.masthead #myVideo {
   visibility: hidden;
 }
 
-#wdm .intro-sec .toronto-banner {
-  width: 100%;
-}
-
-#wdm .intro-sec .service-icons img {
-  width: 80px;
-  height: 80px;
-}
-
-#wdm .intro-sec .service-icons .text {
-  color: #b59042;
-  font-size: small;
-}
-
-#wdm .real-estate .real-estate-intro {
-  padding-left: 8em;
-  padding-right: 8em;
-}
-
-#wdm .real-estate .real-estate-img {
-  width: 100%;
-}
-
-#wdm .real-estate .img-centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#wdm .real-estate .text {
-  font-size: 22px;
-  color: white;
-}
-
-#wdm .parallax {
-  /* The image used */
-  background-image: url("../img/home/home-bg1.png");
-  /* Full height */
-  height: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 #wdm hr {
   max-width: 50px;
   border-width: 0;
@@ -2441,7 +2430,31 @@ header.masthead #myVideo {
 }
 
 #wdm .p-lineheight {
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+@media (min-width: 1200px) {
+  #wdm .p-lineheight {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  #wdm .heading-mobile {
+    display: none;
+  }
+}
+
+#wdm .heading-desktop {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  #wdm .heading-desktop {
+    display: block;
+  }
 }
 
 @media (max-width: 576px) {

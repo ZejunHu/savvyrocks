@@ -23,17 +23,10 @@
     height: auto;
   }
 
-  .home-banner-sec {
-    height: 400px;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
 
   .section-heading {
-    letter-spacing: 6px;
+    font-size: 20px;
+    letter-spacing: 3px;
   }
 
   .section-padding {
@@ -42,6 +35,42 @@
 
   .padding-top-4 {
     padding: 4rem 0 0;
+  }
+
+  .padding-bottom-8 {
+    padding: 0 0 8rem 0;
+  }
+
+  .container-fluid-padding {
+    @media (min-width: 992px) {
+      padding: 0 4rem;
+    }
+    @media (min-width: 1200px) {
+      padding: 0 6rem;
+    }
+    @media (min-width: 1500px) {
+      padding: 0 8rem;
+    }
+  }
+
+  .wdm-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    // .heading-desktop {
+    //   align-items: center;
+    //   justify-content: center;
+    // }
+  }
+
+  .wdm-content-vertical-padding {
+    padding: 3rem;
+    @media (min-width: 1500px) {
+      padding: 10rem 3rem;
+    }
+    @media (min-width: 1680px) {
+      padding: 15rem 3rem;
+    }
   }
 
   .projects {
@@ -97,58 +126,7 @@
     }
   }
 
-  .intro-sec {
-    .toronto-banner {
-      width: 100%;
-    }
 
-    .service-icons {
-      img {
-        width: 80px;
-        height: 80px;
-      }
-
-      .text {
-        color: $theme-yellow;
-        font-size: small;
-      }
-    }
-  }
-
-  .real-estate {
-    .real-estate-intro {
-      padding-left: 8em;
-      padding-right: 8em;
-    }
-
-    .real-estate-img {
-      width: 100%;
-    }
-
-    .img-centered {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .text {
-      font-size: 22px;
-      color: white;
-    }
-  }
-
-  .parallax {
-    /* The image used */
-    background-image: url("../img/home/home-bg1.png");
-    /* Full height */
-    height: 100%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 
   hr {
     max-width: 50px;
@@ -164,6 +142,24 @@
   }
 
   .p-lineheight {
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 23px;
+    @media (min-width: 1200px) {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  .heading-mobile {
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  .heading-desktop {
+    display: none;
+    @media (min-width: 992px) {
+      display: block;
+    }
   }
 }
