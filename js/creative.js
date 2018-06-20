@@ -62,26 +62,7 @@
     offset: 57
   });
 
-  // Collapse Navbar
-  var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
-    } else {
-      $("#mainNav").removeClass("navbar-shrink");
-    }
-    var $nav = $("#mainNav");
-    if ($(this).scrollTop() > $nav.height()) {
-      $("#mainNavSec").removeClass("d-none ");
-      $("#mainNavSec").addClass("nav-scrolled");
-    } else {
-      $("#mainNavSec").addClass("d-none");
-      $("#mainNavSec").removeClass("nav-scrolled");
-    }
-  };
-  // Collapse now if page is not at top
-  navbarCollapse();
-  // Collapse the navbar when page is scrolled
-  $(window).scroll(navbarCollapse);
+
 
   // Scroll reveal calls
   window.sr = ScrollReveal();
@@ -99,6 +80,18 @@
     scale: 0.3,
     distance: '0px'
   }, 300);
+  sr.reveal('.sr-image-left', {
+    origin: 'left',
+    distance: '8rem',
+    duration: 500,
+    easing: 'linear'
+  });
+  sr.reveal('.sr-image-right', {
+    origin: 'right',
+    distance: '8rem',
+    duration: 1000,
+    easing: 'linear'
+  });
 
   // Magnific popup calls
   $('.popup-gallery').magnificPopup({
@@ -116,20 +109,20 @@
     }
   });
 
-  $('.carousel .carousel-item').each(function(){
-    var next = $(this).next();
-    if (!next.length) {
-    next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-
-    if (next.next().length>0) {
-    next.next().children(':first-child').clone().appendTo($(this));
-    }
-    else {
-      $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-    }
-  });
+  // $('.carousel .carousel-item').each(function(){
+  //   var next = $(this).next();
+  //   if (!next.length) {
+  //   next = $(this).siblings(':first');
+  //   }
+  //   next.children(':first-child').clone().appendTo($(this));
+  //
+  //   if (next.next().length>0) {
+  //   next.next().children(':first-child').clone().appendTo($(this));
+  //   }
+  //   else {
+  //     $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+  //   }
+  // });
 
   // $(document).scroll(function () {
   // 	  var $nav = $("#mainNavSec");
