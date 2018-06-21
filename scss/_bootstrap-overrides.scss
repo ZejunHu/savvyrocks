@@ -78,9 +78,10 @@
 .temp-notice-modal.modal {
   .modal-dialog {
     @media (min-width: 992px) {
-      max-width: 640px;
+      max-width: 540px;
     }
     .modal-content {
+      box-shadow: 0px 9px 16px 4px;
       border-radius: 1rem;
       .modal-header {
         border-bottom: 0;
@@ -98,13 +99,16 @@
       }
       .modal-body {
         padding: 0;
+        .modal-body-img {
+          max-height: 5rem;
+        }
         .modal-title {
           font-family: avenir-black;
           font-size: 30px;
           color: #616161;
         }
         .modal-content-text {
-          font-size: 14px;
+          font-size: 16px;
           line-height: 21px;
           color: #848484
         }
@@ -125,7 +129,7 @@
           width: 100%;
           box-shadow: 0px 4px 6px 4px $gray-300;
           &:hover {
-            box-shadow: 0px 16px 18px 0px $gray-300;
+            box-shadow: 5px 10px 18px 0px $gray-500;
           }
         }
       }
