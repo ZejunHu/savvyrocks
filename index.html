@@ -35,7 +35,7 @@
 
 </head>
 
-<body id="home">
+<body id="home" class="modal-open">
   <!-- Navigation first-->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
@@ -243,13 +243,13 @@
               <div class="flipper">
                 <div class="front">
                   <div class="container">
-                    <div class="sub-title-hide text-center py-2">DESIGN AND MANAGEMENT</div>
+                    <div class="sub-title-hide text-center py-2">MARKETING SERVICES</div>
                     <img src="img/home/wechat-356-223.png" alt="Avatar" class="image lazyload" style="width:100%">
                   </div>
                 </div>
                 <div class="back">
                   <div class="middle">
-                    <p class="text">DESIGN AND MANAGEMENT</p>
+                    <p class="text">MARKETING SERVICES</p>
                     <div class="container justify-content-md-left show-more">
                       <div class="show-more-effect-home row">
                         <a class="pr-1 text-white" href="wdm.html">VIEW MORE</a>
@@ -343,7 +343,7 @@
             <img src="img/home/icon-home/WeChat.png" alt="Avatar" class="image lazyload">
           </div>
           <p class="text pt-3">
-            WeChat Marketing Services
+            Marketing Services
           </p>
         </div>
         <div class="col-6 col-sm-3 col-md text-center sr-icons">
@@ -428,6 +428,45 @@
     </div>
   </section>
 
+  <!-- Modal -->
+  <div class="temp-notice-modal modal fade" id="temp-notice" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-4 offset-4">
+                <img src="img/temp/popup-truck.png" class="img-fluid" alt="move">
+              </div>
+            </div>
+            <div class="row p-4">
+              <div class="col-12 text-center">
+                <h2 class="mb-4 modal-title">We Have Moved!</h2>
+                <p class="modal-content-text">Visit us at the new office location</p>
+                <p class="modal-content-text">@ 315 Steelcase Rd E, #202, Markham, ON L3R 2R5.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 offset-3 text-center">
+                <a href="https://www.google.ca/maps/place/315+Steelcase+Rd+E,+Markham,+ON+L3R+2R5/@43.8214021,-79.3433757,17z/data=!3m1!4b1!4m5!3m4!1s0x89d4d37c1c2f0a49:0x789ab9c02ae074bb!8m2!3d43.8214021!4d-79.341187" class="btn btn-google" target="_blank">Search on GOOGLE MAP</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <section class="footer p-0">
     <div class="container-fluid">
       <div class="contact row">
@@ -492,6 +531,11 @@
   <!-- Custom scripts for this template -->
   <script src="js/creative.min.js"></script>
   <script src="js/mainNav.min.js"></script>
+  <script type="text/javascript">
+    $(window).on('load',function(){
+      $('#temp-notice').modal('show');
+    });
+  </script>
   <script>
     lazyload();
   </script>

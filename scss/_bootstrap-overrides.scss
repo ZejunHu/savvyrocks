@@ -74,3 +74,61 @@
     }
   }
 }
+
+.temp-notice-modal.modal {
+  .modal-dialog {
+    @media (min-width: 992px) {
+      max-width: 640px;
+    }
+    .modal-content {
+      border-radius: 1rem;
+      .modal-header {
+        border-bottom: 0;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        .close {
+          font-size: 3rem;
+          font-weight: 300;
+          padding: 0.2rem 1rem;
+          color: #848484;
+          &:hover {
+            color:#C19743;
+          }
+        }
+      }
+      .modal-body {
+        padding: 0;
+        .modal-title {
+          font-family: avenir-black;
+          font-size: 30px;
+          color: #616161;
+        }
+        .modal-content-text {
+          font-size: 14px;
+          line-height: 21px;
+          color: #848484
+        }
+      }
+      .modal-footer {
+        border-top: 0;
+        padding-top: 0;
+        padding-bottom: 3rem;
+        .btn-google {
+          color: white;
+          font-family: avenir-medium;
+          font-size: 12px;
+          letter-spacing: 1px;
+          background-color: #C19743;
+          text-transform: none;
+          padding: 1rem;
+          border-radius: 5px;
+          width: 100%;
+          box-shadow: 0px 4px 6px 4px $gray-300;
+          &:hover {
+            box-shadow: 0px 16px 18px 0px $gray-300;
+          }
+        }
+      }
+    }
+  }
+}

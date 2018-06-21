@@ -890,6 +890,72 @@ header.masthead #myVideo {
   background-image: url("../img/chevron-right.svg");
 }
 
+@media (min-width: 992px) {
+  .temp-notice-modal.modal .modal-dialog {
+    max-width: 640px;
+  }
+}
+
+.temp-notice-modal.modal .modal-dialog .modal-content {
+  border-radius: 1rem;
+}
+
+.temp-notice-modal.modal .modal-dialog .modal-content .modal-header {
+  border-bottom: 0;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.temp-notice-modal.modal .modal-dialog .modal-content .modal-header .close {
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 0.2rem 1rem;
+  color: #848484;
+}
+
+.temp-notice-modal.modal .modal-dialog .modal-content .modal-header .close:hover {
+  color: #C19743;
+}
+
+.temp-notice-modal.modal .modal-dialog .modal-content .modal-body {
+  padding: 0;
+}
+
+.temp-notice-modal.modal .modal-dialog .modal-content .modal-body .modal-title {
+  font-family: avenir-black;
+  font-size: 30px;
+  color: #616161;
+}
+
+.temp-notice-modal.modal .modal-dialog .modal-content .modal-body .modal-content-text {
+  font-size: 14px;
+  line-height: 21px;
+  color: #848484;
+}
+
+.temp-notice-modal.modal .modal-dialog .modal-content .modal-footer {
+  border-top: 0;
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.temp-notice-modal.modal .modal-dialog .modal-content .modal-footer .btn-google {
+  color: white;
+  font-family: avenir-medium;
+  font-size: 12px;
+  letter-spacing: 1px;
+  background-color: #C19743;
+  text-transform: none;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0px 4px 6px 4px #dee2e6;
+}
+
+.temp-notice-modal.modal .modal-dialog .modal-content .modal-footer .btn-google:hover {
+  box-shadow: 0px 16px 18px 0px #dee2e6;
+}
+
 #home .header-banner {
   width: 80%;
   height: auto;
@@ -2316,10 +2382,17 @@ header.masthead #myVideo {
 #wdm .section-heading {
   font-size: 20px;
   letter-spacing: 3px;
+  line-height: 33px;
 }
 
 #wdm .section-padding {
-  padding: 4.8rem 0 3rem;
+  padding: 1rem 0 0 0;
+}
+
+@media (min-width: 992px) {
+  #wdm .section-padding {
+    padding: 4.8rem 0 3rem;
+  }
 }
 
 #wdm .padding-top-4 {
@@ -2430,15 +2503,8 @@ header.masthead #myVideo {
 }
 
 #wdm .p-lineheight {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 23px;
-}
-
-@media (min-width: 1200px) {
-  #wdm .p-lineheight {
-    font-size: 18px;
-    line-height: 30px;
-  }
 }
 
 @media (min-width: 992px) {
