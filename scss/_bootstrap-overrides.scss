@@ -136,3 +136,34 @@
     }
   }
 }
+
+// .fade {
+//   opacity: 0;
+//   transition: opacity 1s linear;
+// }
+//
+// .modal.fade .modal-dialog {
+//   transition: -webkit-transform 1s ease-out;
+//   transition: transform 1s ease-out;
+//   transition: transform 1s ease-out,-webkit-transform 1s ease-out;
+//   // -webkit-transform: translate(0,-25%);
+//   // transform: translate(0,-25%);
+// }
+//
+// .modal.show .modal-dialog {
+//   -webkit-transform: translate(0,0);
+//   transform: translate(0,0);
+// }
+
+.fade-scale {
+  //transform: scale(0);
+  opacity: 0;
+  -webkit-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+.fade-scale.show {
+  opacity: 1;
+  //transform: scale(1);
+}

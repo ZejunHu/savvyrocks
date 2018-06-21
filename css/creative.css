@@ -961,6 +961,17 @@ header.masthead #myVideo {
   box-shadow: 5px 10px 18px 0px #adb5bd;
 }
 
+.fade-scale {
+  opacity: 0;
+  -webkit-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+.fade-scale.show {
+  opacity: 1;
+}
+
 #home .header-banner {
   width: 80%;
   height: auto;
