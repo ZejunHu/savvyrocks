@@ -532,8 +532,18 @@
   <script src="js/creative.min.js"></script>
   <script src="js/mainNav.min.js"></script>
   <script type="text/javascript">
-    $(window).on('load',function(){
-      $('#temp-notice').modal('show');
+    $(function() {
+      var visited = sessionStorage['visited'];
+      if (!visited) {
+         init();
+         sessionStorage['visited'] = true;
+      }
+
+      function init() {
+        $(window).on('load',function(){
+          $('#temp-notice').modal('show');
+        });
+      }
     });
   </script>
   <script>

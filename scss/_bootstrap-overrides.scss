@@ -88,6 +88,7 @@
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
         .close {
+          outline: none;
           font-size: 3rem;
           font-weight: 300;
           padding: 0.2rem 1rem;
@@ -106,6 +107,7 @@
           font-family: avenir-black;
           font-size: 30px;
           color: #616161;
+          letter-spacing: 2px;
         }
         .modal-content-text {
           font-size: 16px;
@@ -127,9 +129,9 @@
           padding: 1rem;
           border-radius: 5px;
           width: 100%;
-          box-shadow: 0px 4px 6px 4px $gray-300;
+          box-shadow: 0px 2px 6px 4px $gray-300;
           &:hover {
-            box-shadow: 5px 10px 18px 0px $gray-500;
+            box-shadow: 5px 7px 18px 0px $gray-500;
           }
         }
       }

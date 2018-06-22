@@ -908,6 +908,7 @@ header.masthead #myVideo {
 }
 
 .temp-notice-modal.modal .modal-dialog .modal-content .modal-header .close {
+  outline: none;
   font-size: 3rem;
   font-weight: 300;
   padding: 0.2rem 1rem;
@@ -930,6 +931,7 @@ header.masthead #myVideo {
   font-family: avenir-black;
   font-size: 30px;
   color: #616161;
+  letter-spacing: 2px;
 }
 
 .temp-notice-modal.modal .modal-dialog .modal-content .modal-body .modal-content-text {
@@ -954,11 +956,11 @@ header.masthead #myVideo {
   padding: 1rem;
   border-radius: 5px;
   width: 100%;
-  box-shadow: 0px 4px 6px 4px #dee2e6;
+  box-shadow: 0px 2px 6px 4px #dee2e6;
 }
 
 .temp-notice-modal.modal .modal-dialog .modal-content .modal-footer .btn-google:hover {
-  box-shadow: 5px 10px 18px 0px #adb5bd;
+  box-shadow: 5px 7px 18px 0px #adb5bd;
 }
 
 .fade-scale {
