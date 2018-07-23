@@ -2585,8 +2585,16 @@ header.masthead #myVideo {
   padding: 8rem 0 3rem;
 }
 
+#webdm .pic-heading {
+  margin-top: 100px;
+}
+
 #webdm .padding-top-4 {
   padding: 4rem 0 0;
+}
+
+#webdm .pic-top {
+  margin-bottom: 8px;
 }
 
 #webdm .projects .overlay-cards .image {
