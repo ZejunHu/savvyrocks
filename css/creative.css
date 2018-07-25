@@ -2706,3 +2706,418 @@ header.masthead #myVideo {
 #webdm .p-lineheight {
   line-height: 30px;
 }
+
+@media (max-width: 576px) {
+  #demo .intro {
+    padding-top: 3rem !important;
+  }
+}
+
+#demo .banner {
+  overflow-y: hidden;
+}
+
+#demo .banner img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  #demo .banner img {
+    margin-top: 110px;
+    transform: scale(2, 2);
+  }
+}
+
+#demo .header-banner {
+  width: 80%;
+  height: auto;
+}
+
+#demo .home-banner-sec {
+  height: 400px;
+}
+
+#demo .home-banner-sec img {
+  width: 100%;
+  height: 100%;
+}
+
+#demo .section-heading {
+  letter-spacing: 6px;
+}
+
+#demo .section-padding {
+  padding: 8rem 0 3rem;
+}
+
+#demo .pic-heading {
+  margin-top: 100px;
+}
+
+#demo .padding-top-4 {
+  padding: 4rem 0 0;
+}
+
+#demo .pic-top {
+  margin-bottom: 8px;
+}
+
+#demo .projects .overlay-cards .image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+#demo .projects .overlay-cards .middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #b59042;
+  width: 100%;
+  height: 100%;
+}
+
+#demo .projects .overlay-cards .container:hover .image {
+  opacity: 0.3;
+}
+
+#demo .projects .overlay-cards .container:hover .middle {
+  opacity: 0.8;
+}
+
+#demo .projects .overlay-cards .text {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#demo .projects .overlay-cards .container:hover .sub-title-hide {
+  visibility: hidden;
+}
+
+#demo .intro-sec .toronto-banner {
+  width: 100%;
+}
+
+#demo .intro-sec .service-icons img {
+  width: 80px;
+  height: 80px;
+}
+
+#demo .intro-sec .service-icons .text {
+  color: #b59042;
+  font-size: small;
+}
+
+#demo .real-estate .real-estate-intro {
+  padding-left: 8em;
+  padding-right: 8em;
+}
+
+#demo .real-estate .real-estate-img {
+  width: 100%;
+}
+
+#demo .real-estate .img-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#demo .real-estate .text {
+  font-size: 22px;
+  color: white;
+}
+
+#demo .parallax {
+  /* The image used */
+  background-image: url("../img/home/home-bg1.png");
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#demo hr {
+  max-width: 50px;
+  border-width: 0;
+}
+
+#demo .override-mwidth {
+  max-width: 827px !important;
+}
+
+#demo .text-auto {
+  text-align: -webkit-auto;
+}
+
+#demo .p-lineheight {
+  line-height: 30px;
+}
+
+#demo .work .overlay {
+  background: #1C1D21;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  opacity: 0;
+  -webkit-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+#demo .work:hover .overlay {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  opacity: 0.8;
+}
+
+#demo .work .work-link {
+  text-align: center;
+  margin-top: 5px;
+  opacity: 0;
+  -webkit-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+
+#demo .work .work-link a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  color: #FFF;
+  line-height: 50px;
+  text-align: center;
+}
+
+#demo .work:hover .work-link {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  opacity: 1;
+}
+
+#demo .work .work-content {
+  position: absolute;
+  left: 25px;
+  right: 25px;
+  top: 50%;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#demo .work .work-content h3 {
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  opacity: 0;
+  color: #FFF;
+  margin-bottom: 10px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+#demo .work:hover .work-content h3 {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+#demo .work .work-content span {
+  display: block;
+  text-transform: uppercase;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  opacity: 0;
+  color: transparent;
+  margin-bottom: 5px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+#demo .work:hover .work-content span {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+#demo .work2 .overlay {
+  background: #1C1D21;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0;
+  -webkit-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+#demo .work2:hover .overlay {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  opacity: 0.8;
+}
+
+#demo .work2 .work-link {
+  text-align: center;
+  margin-top: 5px;
+  opacity: 0;
+  -webkit-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+}
+
+#demo .work2 .work-link a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  color: #FFF;
+  line-height: 50px;
+  text-align: center;
+}
+
+#demo .work2:hover .work-link {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  opacity: 1;
+}
+
+#demo .work2 .work-content {
+  position: absolute;
+  left: 25px;
+  right: 25px;
+  top: 50%;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#demo .work2 .work-content h3 {
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  opacity: 0;
+  color: #FFF;
+  margin-bottom: 10px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+#demo .work2:hover .work-content h3 {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+#demo .work2 .work-content span {
+  display: block;
+  text-transform: uppercase;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  opacity: 0;
+  color: transparent;
+  margin-bottom: 5px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+#demo .work2:hover .work-content span {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+#demo .show-a {
+  text-decoration: none !important;
+}
+
+#demo .btn-yellow {
+  border: 1px #383736 solid;
+  border-radius: 4px;
+  position: relative;
+  height: 45px;
+  margin: 10px 7px;
+  padding-right: 30px;
+  padding-left: 30px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #383736;
+  text-transform: uppercase;
+  outline: 0;
+  overflow: hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.08s ease-in;
+  -o-transition: 0.08s ease-in;
+  -ms-transition: 0.08s ease-in;
+  -moz-transition: 0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+  display: flex;
+}
+
+#demo .show-more-effect-head:hover {
+  color: #fff !important;
+}
+
+#demo .show-more-effect-head:hover .show-more-arrow-effect-head {
+  animation: ndge 2s forwards;
+}
+
+@keyframes ndge {
+  50% {
+    transform: translate(15px, 0);
+  }
+  100% {
+    transform: translate(15px, 0);
+  }
+}
